@@ -68,30 +68,6 @@ Incorporate weather and temperature features to improve predictive power.
 
 Explore cloud integration (AWS Lambda or Azure Functions) for automated data refresh and model retraining.
 
-MISO-load-forecast-dashboard/
-├── data/
-│   ├── miso_hourly_load.csv               # Cached hourly load data (from EIA API or synthetic)
-│   ├── outputs/
-│   │   ├── forecast_next14days.csv        # Baseline ARIMA forecast results
-│   │   └── sarima_forecast_next14days.csv # Enhanced SARIMA forecast results
-│   └── dashboard_ready/
-│       └── miso_forecast_unified.csv      # Unified dataset for Plotly dashboard
-│
-├── figures/
-│   ├── daily_pattern.png                  # Average daily load profile
-│   ├── weekly_distribution.png            # Load by day of week
-│   ├── monthly_trend.png                  # Average monthly load trend
-│   ├── rolling_mean.png                   # 7-day rolling mean visualization
-│   ├── arima_baseline_forecast.png        # ARIMA model diagnostic plot
-│   ├── sarima_forecast_holdout.png        # SARIMA model diagnostic plot
-│   └── interactive/
-│       └── miso_forecast_dashboard.html   # Interactive Plotly dashboard
-│
-├── MISO_load_forecast_dashboard.ipynb     # Main Jupyter Notebook
-├── requirements.txt                       # Python dependencies
-├── README.md                              # Project overview and documentation
-└── environment.yml                        # (Optional) Conda environment specification
-
 Citation and Attribution
 
 This project uses publicly available data from the
